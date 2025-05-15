@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tags Management</title>
+    <script>include("/Layout/head.html","head")</script>
+    <link rel="icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/axios.min.js"></script>
+
+    <script src="/js/utils/include.js"></script>
+    <script src="/js/photo_detail.js" type="module"></script>
+
+</head>
+
+<body>
+    <header  class="container-fluid p-0">
+        <script>include ("/Layout/header.html", "header");</script> <!-- Cabecera del sitio -->
+        <h4 class="text-center fw-light p-0">
+            <i class="fa fa-book"></i> <span id="pageTitle">Tags</span>
+        </h4>
+    </header>
+
+    <main class="container-fluid  ps-1"> 
+        <aside class="row">
+            <div id="errors" class="col-sm-9 p-0"></div > <!-- Div de errores para peticiones Ajax a la API REST --> 
+        </aside>
+        <section id="photo-detail" class="row px-3">
+            <div class="container">
+
+                <div id="errors"></div>
+        
+                <div class="row text-center">
+                    <div class="col-md-9" id="photo-details-column"></div>
+        
+                    <div class="col-md-3" id="actions-col"></div>
+        
+                    </div>
+                </div>
+        
+                <div class="row text-center">
+                    <div class="col-md">
+                        <a href="index.html" class="btn btn-primary">Return to the gallery</a>
+                    </div>
+                </div>
+        </section>	
+    </main>
+
+    </div>
+    <script>include ("/Layout/footer.html", "body");</script>
+</body>
+
+</html>
